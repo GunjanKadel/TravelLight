@@ -30,20 +30,41 @@
     <link rel="stylesheet" href="css/style_new.css">
 
     <script>
-      let data = 0;
- 
+      let data1 = 0;
+      let data2 = 0;
+      let data3 = 0;
  //printing default value of data that is 0 in h2 tag
- document.getElementById("counting").innerText = data;
+ document.getElementById("counting1").innerText = data1;
+ document.getElementById("counting2").innerText = data2;
+ document.getElementById("counting3").innerText = data3;
   
  //creation of increment function
- function increment() {
-     data = data + 1;
-     document.getElementById("counting").innerText = data;
+ function increment1() {
+     data1 = data1 + 1;
+     document.getElementById("counting1").innerText = data1;
  }
  //creation of decrement function
- function decrement() {
-     data = data - 1;
-     document.getElementById("counting").innerText = data;
+ function decrement1() {
+     data1 = data1 - 1;
+     document.getElementById("counting1").innerText = data1;
+ }
+ function increment2() {
+     data2 = data2 + 1;
+     document.getElementById("counting2").innerText = data2;
+ }
+ //creation of decrement function
+ function decrement2() {
+     data2 = data2 - 1;
+     document.getElementById("counting2").innerText = data2;
+ }
+ function increment3() {
+     data3 = data3 + 1;
+     document.getElementById("counting3").innerText = data3;
+ }
+ //creation of decrement function
+ function decrement3() {
+     data3 = data3 - 1;
+     document.getElementById("counting3").innerText = data3;
  }
     </script>
   </head>
@@ -146,9 +167,9 @@
                         <div class="col-4">
                           <div class="container py-4 justify-content-start">
                             <div class="d-flex my-4 py-4">
-                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="increment()">+</button>
-                              <h2 id="counting">0</h2>
-                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="decrement()">-</button>       
+                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="increment1()">+</button>
+                              <h2 id="counting1" style="color: black;">0</h2>
+                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="decrement1()">-</button>       
                             </div>
                           </div>
                         </div>
@@ -168,9 +189,9 @@
                         <div class="col-4">
                           <div class="container py-4 justify-content-start">
                             <div class="d-flex my-4 py-4">
-                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="increment()">+</button>
-                              <h2 id="counting">0</h2>
-                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="decrement()">-</button>       
+                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="increment2()">+</button>
+                              <h2 id="counting2" style="color: black;">0</h2>
+                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="decrement2()">-</button>       
                             </div>
                           </div>
                         </div>
@@ -191,9 +212,9 @@
                         <div class="col-4">
                           <div class="container py-4 justify-content-start">
                             <div class="d-flex my-4 py-4">
-                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="increment()">+</button>
-                              <h2 id="counting">0</h2>
-                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="decrement()">-</button>       
+                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="increment3()">+</button>
+                              <h2 id="counting3" style="color: black;">0</h2>
+                              <button class = "btn btn-secondary btn-circle btn-sm" onclick="decrement3()">-</button>       
                             </div>
                           </div>
                         </div>
